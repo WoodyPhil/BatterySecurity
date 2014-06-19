@@ -17,6 +17,7 @@ import Tkinter
 import sys
 import time
 from osax import *
+import getpass
 
 #replacing by Torben
 old_string_length = 0
@@ -39,6 +40,10 @@ audio_file = "/Users/Woody/Documents/nanana.wav"
 def ende():
     main.destroy()
 
+#function that asks the user to enter an password
+p = getpass.getpass()
+print 'You entered:', p
+
 #main security function
 def security():
     while Batterystate.getBatteryStatus() == 999:
@@ -55,7 +60,7 @@ def security():
             print_replace('Ihr MacBook wird geklaut!')
 
 #button for starting the securitymode
-b = Tkinter.Button(main, text = "Security - Modus starten!", command = security)
+b = Tkinter.Button(main, text = "Security - Modus starten!", command = security, command = p)
 b.pack()
 
 #closing button
