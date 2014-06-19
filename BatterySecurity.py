@@ -18,12 +18,6 @@ import sys
 import time
 from osax import *
 
-#Volume control
-sa = OSAX()
-for i in range(50):
-    sa.set_volume(i*2)
-    time.sleep(0.1)
-
 #replacing by Torben
 old_string_length = 0
 def print_replace(string):
@@ -52,6 +46,11 @@ def security():
         time.sleep(1)
     else:
         while Batterystate.getBatteryStatus() != 999:
+            #increase volume to max
+            sa = OSAX()
+            for i in range(50):
+            sa.set_volume(i*2)
+            time.sleep(0.1)
             return_alarm = subprocess.call(["afplay", audio_file])
             print_replace('Ihr MacBook wird geklaut!')
 
