@@ -49,8 +49,8 @@ def security():
             #increase volume to max
             sa = OSAX()
             for i in range(50):
-            sa.set_volume(i*2)
-            time.sleep(0.1)
+                sa.set_volume(i*2)
+                time.sleep(0.1)
             return_alarm = subprocess.call(["afplay", audio_file])
             print_replace('Ihr MacBook wird geklaut!')
 
