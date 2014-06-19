@@ -1,6 +1,16 @@
 #!/usr/bin/env python3.4$
 
 from __future__ import print_function
+
+__author__ = 'Philippe Woodruff'
+#__copyright__ = 'see module docstring'
+#__credits__ = 'Philippe Woodruff',
+#__license__ = 'see module docstring'
+__maintainer__ = 'Philippe Woodruff'
+__maintainer_email__ = 'philippe.woodruff@googlemail.com'
+#__status__ = 'stable'
+#__version__ = '1.0'
+
 import Batterystate
 import subprocess
 import Tkinter
