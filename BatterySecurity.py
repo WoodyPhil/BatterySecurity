@@ -42,7 +42,7 @@ def ende():
 
 #function that asks the user to enter an password
 p = getpass.getpass()
-print 'You entered:', p
+#print 'You entered:', p
 
 #main security function
 def security():
