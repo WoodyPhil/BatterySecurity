@@ -42,7 +42,7 @@ def ende():
 
 #function that asks the user to enter an password
 p = getpass.getpass()
-#print 'You entered:', p
+    print 'You entered:', p
 
 #main security function
 def security():
@@ -59,8 +59,12 @@ def security():
             return_alarm = subprocess.call(["afplay", audio_file])
             print_replace('Ihr MacBook wird geklaut!')
 
+#button to set the user password
+b = Tkinter.Button(main, text = "Passwort festlegen", command = p)
+b.pack()
+
 #button for starting the securitymode
-b = Tkinter.Button(main, text = "Security - Modus starten!", command = security, command = p)
+b = Tkinter.Button(main, text = "Security - Modus starten!", command = security)
 b.pack()
 
 #closing button
