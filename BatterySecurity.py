@@ -41,13 +41,8 @@ def ende():
     main.destroy()
 
 #function that asks the user to enter an password
-<<<<<<< HEAD
-p1 = getpass.getpass()
-=======
 def p = getpass.getpass()
->>>>>>> FETCH_HEAD
-#    print 'You entered:', p
-p2 =getpass
+
 
 #main security function
 def security():
