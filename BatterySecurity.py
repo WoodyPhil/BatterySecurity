@@ -34,7 +34,7 @@ def print_replace(string):
 main = Tkinter.Tk()
 
 #arert signal
-audio_file = "/Users/Woody/Documents/nanana.wav"
+audio_file = "/Users/Woody/BatterySecurity/SpaceAlarm.wav"
 
 #function for closing button
 def ende():
